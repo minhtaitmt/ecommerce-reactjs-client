@@ -9,11 +9,13 @@ const Container = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    ${mobile({height: "40vh"})}
 `;
 
 const Title = styled.h1`
     font-size: 70px;
     margin-bottom: 20px;
+    ${mobile({fontSize: "40px", marginBottom: "10px"})}
 `;
 
 const Desc = styled.div`
@@ -31,7 +33,7 @@ const InputContainer = styled.div`
     align-items: center;
     justify-content: space-between;
     border: 1px solid lightgray;
-    ${mobile({width: "80%"})}
+    ${mobile({width: "80%", height: "30px"})}
 `;
 
 const Input = styled.input`
