@@ -237,6 +237,7 @@ const Navbar = () => {
 											color: "black",
 											textDecoration: "none",
 										}}
+										onClick={() => setOpenCate(false)}
 									>
 										<DropdownItem>
 											{cate.title}
