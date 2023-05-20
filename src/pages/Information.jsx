@@ -251,7 +251,7 @@ const Information = () => {
 					dispatch(
 						updateUser({
 							birth: newBirth,
-							avatar: res.data,
+							avatar: res.data.avatar,
 							...others,
 							_id,
 							email,
@@ -284,9 +284,9 @@ const Information = () => {
 								src={
 									file
 										? URL.createObjectURL(file)
-										: avatar
+										: (avatar
 										? avatar
-										: "https://icon-library.com/images/no-image-icon/no-image-icon-0.jpg"
+										: "https://icon-library.com/images/no-image-icon/no-image-icon-0.jpg")
 								}
 							/>
 						</ImgContainer>
