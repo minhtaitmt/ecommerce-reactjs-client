@@ -69,7 +69,7 @@ const CateMenu = styled.ul`
 	top: 90px;
 	left: 290px;
 	border: 1px solid lightgray;
-	z-index: 1;
+	z-index: 10;
 	background-color: white;
 	display: ${(props) => props.displayCate};
 	flex-direction: column;
@@ -135,7 +135,7 @@ const DropdownMenu = styled.ul`
 	top: 90px;
 	right: 60px;
 	border: 1px solid lightgray;
-	z-index: 1;
+	z-index: 10;
 	background-color: white;
 	display: ${(props) => props.display};
 	flex-direction: column;
