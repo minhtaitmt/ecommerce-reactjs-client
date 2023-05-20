@@ -285,8 +285,7 @@ const Information = () => {
 									file
 										? URL.createObjectURL(file)
 										: avatar
-										? process.env.REACT_APP_BACKEND_URL +
-										  avatar
+										? avatar
 										: "https://icon-library.com/images/no-image-icon/no-image-icon-0.jpg"
 								}
 							/>
