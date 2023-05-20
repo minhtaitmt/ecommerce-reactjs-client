@@ -74,7 +74,7 @@ const Product = ({ item }) => {
 		<Container>
 			<Circle />
 			<Image
-				src={process.env.REACT_APP_BACKEND_URL + item.img[0]}
+				src={item.img[0]}
 				alt="No image"
 			/>
 			<Info>

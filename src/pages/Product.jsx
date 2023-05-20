@@ -261,7 +261,7 @@ const Product = () => {
 							return (
 								<Image
 									src={
-										process.env.REACT_APP_BACKEND_URL + img
+										img
 									}
 								/>
 							);

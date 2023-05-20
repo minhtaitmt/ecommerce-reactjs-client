@@ -320,11 +320,7 @@ const Cart = () => {
 								<ProductDetail>
 									<Link to={`/product/${product._id}`}>
 										<Image
-											src={
-												process.env
-													.REACT_APP_BACKEND_URL +
-												product.img[0]
-											}
+											src={product.img[0]}
 										/>
 									</Link>
 									<Detail>
