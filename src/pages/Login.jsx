@@ -139,9 +139,8 @@ const Login = () => {
 					{validate && <Error>{validate}</Error>}
 					{error && validate && <Error>Oops! Wrong username or password...</Error>}
 					<LinkContainer>
-						<Link style={{ marginTop: "10px", fontSize: "12px", color: "black", textDecoration: "none" }} >REMEMBER YOUR PASSWORD?</Link>
-						<Link style={{ marginTop: "10px", fontSize: "12px", color: "black", textDecoration: "none" }}
-							to="/register">CREATE A NEW ACCOUNT</Link>
+						<Link to="#" style={{ marginTop: "10px", fontSize: "12px", color: "black", textDecoration: "none" }} >REMEMBER YOUR PASSWORD?</Link>
+						<Link to="/register" style={{ marginTop: "10px", fontSize: "12px", color: "black", textDecoration: "none" }} >CREATE A NEW ACCOUNT</Link>
 					</LinkContainer>
 				</Form>
 			</Wrapper>
