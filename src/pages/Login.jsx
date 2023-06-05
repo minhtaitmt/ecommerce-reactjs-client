@@ -4,6 +4,7 @@ import { useState } from "react";
 import {login} from "../redux/apiCalls"
 import {useDispatch, useSelector} from "react-redux"
 import Validator from "../utils/validator";
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
 	width: 100vw;
@@ -66,16 +67,6 @@ const LinkContainer = styled.div`
 	justify-content: space-between;
 `;
 
-const Link = styled.a`
-	margin-top: 10px;
-	font-size: 12px;
-	cursor: pointer;
-	&:hover {
-		text-decoration: underline;
-	}
-	text-decoration: none;
-	color: black;
-`;
 
 const Error = styled.span`
 	color: red;
@@ -148,8 +139,9 @@ const Login = () => {
 					{validate && <Error>{validate}</Error>}
 					{error && validate && <Error>Oops! Wrong username or password...</Error>}
 					<LinkContainer>
-						<Link >REMEMBER YOUR PASSWORD?</Link>
-						<Link href="/register">CREATE A NEW ACCOUNT</Link>
+						<Link style={{ marginTop: "10px", fontSize: "12px", color: "black", textDecoration: "none" }} >REMEMBER YOUR PASSWORD?</Link>
+						<Link style={{ marginTop: "10px", fontSize: "12px", color: "black", textDecoration: "none" }}
+							to="/register">CREATE A NEW ACCOUNT</Link>
 					</LinkContainer>
 				</Form>
 			</Wrapper>
